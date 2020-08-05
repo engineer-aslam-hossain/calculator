@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="calculator"></section>
+    <div class="container">
+        <div class="cal-box">
+            <form name='calculator'>
+                <input type="text" name="display" id="display" placeholder="0" readonly>
+                <br>
+                <input type="button" class="button" value="7" onclick="calculator.display.value += '7'">
+                <input type="button" class="button" value="8" onclick="calculator.display.value += '8'">
+                <input type="button" class="button" value="9" onclick="calculator.display.value += '9'">
+                <input type="button" class="button mathButton" value="+" onclick="calculator.display.value += '+'">
+                <br>
+                <input type="button" class="button" value="4" onclick="calculator.display.value += '4'">
+                <input type="button" class="button" value="5" onclick="calculator.display.value += '5'">
+                <input type="button" class="button" value="6" onclick="calculator.display.value += '6'">
+                <input type="button" class="button mathButton" value="-" onclick="calculator.display.value += '-'">
+                <br>
+                <input type="button" class="button" value="1" onclick="calculator.display.value += '1'">
+                <input type="button" class="button" value="2" onclick="calculator.display.value += '2'">
+                <input type="button" class="button" value="3" onclick="calculator.display.value += '3'">
+                <input type="button" class="button mathButton" value="x" onclick="calculator.display.value += '*'">
+                <br>
+                <input type="button" class="button clearButton" value="c" onclick="calculator.display.value = ''">
+                <input type="button" class="button" value="0" onclick="calculator.display.value += '0'">
+                <input type="button" class="button equal" value="=" onclick="calculator.display.value = eval(calculator.display.value) ">
+                <input type="button" class="button mathButton" value="/" onclick="calculator.display.value += '/'">
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
